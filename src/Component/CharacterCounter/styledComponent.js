@@ -61,3 +61,13 @@ export const AddCounterButton = styled.button`
   color: #0f172a;
   font-weight: bold;
 `
+export const UnOrderListItemsContainer = styled.ul`
+  list-style: none;
+  padding: 0px;
+  overflow-y: auto;
+  flex-grow: 1;
+`
+
+export const NoListImage = styled.img`
+  width: 100%;
+`
