@@ -30,7 +30,7 @@ class CharacterCounter extends Component {
         userTyped: userInput,
       }
       const newList = [...RenderList, newObject]
-      this.setState({RenderList: newList})
+      this.setState({RenderList: newList, userInput: ''})
     }
   }
 

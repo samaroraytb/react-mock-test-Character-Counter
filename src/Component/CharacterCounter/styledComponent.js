@@ -5,6 +5,13 @@ export const MainCharacterCounterContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  @media all and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
 `
 
 export const YellowLeftSideContainer = styled.div`
@@ -13,6 +20,12 @@ export const YellowLeftSideContainer = styled.div`
   text-align: center;
   color: #0f172a;
   padding: 20px;
+  overflow-y: auto;
+  @media all and (max-width: 768px) {
+    width: 100%;
+    min-height: 80vh;
+    order: 1;
+  }
 `
 
 export const BlueRightSideContainer = styled.div`
@@ -21,6 +34,10 @@ export const BlueRightSideContainer = styled.div`
   text-align: center;
   color: #ffc533;
   padding: 20px;
+  @media all and (max-width: 768px) {
+    width: 100%;
+    min-height: 250px;
+  }
 `
 
 export const LeftSideMainHeading = styled.h1`
@@ -64,7 +81,6 @@ export const AddCounterButton = styled.button`
 export const UnOrderListItemsContainer = styled.ul`
   list-style: none;
   padding: 0px;
-  overflow-y: auto;
   flex-grow: 1;
 `
 
