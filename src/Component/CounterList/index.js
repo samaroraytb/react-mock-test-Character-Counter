@@ -4,7 +4,9 @@ const CounterList = props => {
   const {eachDetail} = props
   const {userTyped} = eachDetail
   return (
-    <ListItemWithLength>{`${userTyped}: ${userTyped.length}`}</ListItemWithLength>
+    <li>
+      <ListItemWithLength>{`${userTyped}: ${userTyped.length}`}</ListItemWithLength>
+    </li>
   )
 }
 

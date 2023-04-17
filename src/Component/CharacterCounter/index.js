@@ -22,7 +22,8 @@ class CharacterCounter extends Component {
     this.setState({userInput: event.target.value})
   }
 
-  clickToAddList = () => {
+  clickToAddList = event => {
+    event.preventDefault()
     const {userInput, RenderList} = this.state
     if (userInput !== '') {
       const newObject = {
@@ -60,14 +61,14 @@ class CharacterCounter extends Component {
         </YellowLeftSideContainer>
         <BlueRightSideContainer>
           <RightSideMainHeading>Character Counter</RightSideMainHeading>
-          <InputContainerCounter>
+          <InputContainerCounter onSubmit={this.clickToAddList}>
             <InputTypeText
               type="text"
               value={userInput}
               placeholder="Enter the Characters here"
               onChange={this.changeUserInput}
             />
-            <AddCounterButton onClick={this.clickToAddList} type="button">
+            <AddCounterButton onClick={this.clickToAddList} type="submit">
               Add
             </AddCounterButton>
           </InputContainerCounter>

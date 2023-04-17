@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ListItemWithLength = styled.li`
+export const ListItemWithLength = styled.p`
   color: #0f172a;
   font-weight: bold;
   text-align: left;

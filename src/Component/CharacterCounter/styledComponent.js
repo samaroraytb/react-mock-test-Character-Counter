@@ -55,7 +55,7 @@ export const RightSideMainHeading = styled.h1`
   align-items: center;
 `
 
-export const InputContainerCounter = styled.div`
+export const InputContainerCounter = styled.form`
   width: 100%;
   display: flex;
 `
